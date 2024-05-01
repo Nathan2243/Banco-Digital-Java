@@ -4,7 +4,8 @@ package banco_digital;
 
 
 public abstract class Conta implements Iconta {
-
+	
+	
 	// toda vez que for criada uma conta sera adicionado um numero a mais pela
 	// sequencial
 	private static int SEQUENCIAL = 1;

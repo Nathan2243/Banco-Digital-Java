@@ -1,0 +1,19 @@
+package banco_digital;
+
+
+public class ContaPoupanca extends Conta {
+	
+	Cliente client = new Cliente();
+
+	@Override
+	public void impressaoExtrato() {
+		client.setNome("Nathan");
+		client.getNome();
+		System.out.println("=== Extrato Conta Poupança ===");
+		super.imprimirInfosComuns();
+	}
+
+	
+	
+
+}
