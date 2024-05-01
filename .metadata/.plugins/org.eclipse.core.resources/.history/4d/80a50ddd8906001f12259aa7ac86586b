@@ -1,0 +1,11 @@
+package banco_digital;
+
+public interface Iconta {
+	
+	public void sacar();
+
+	public void depositar();
+
+	public void transferir();
+
+}

@@ -1,0 +1,19 @@
+package banco_digital;
+
+public class ContaPoupanca extends Conta {
+
+	@Override
+	public void impressaoExtrato() {
+		imprimirInfosComuns();
+	}
+
+	protected void imprimirInfosComuns() {
+		System.out.println("Extrato conta poupança");
+		System.out.println(String.format("Agencia: %d", super.agencia));
+		System.out.println(String.format("Numero: %d", super.numero));
+		System.out.println(String.format("Saldo: %2.f", super.saldo));
+	}
+
+	
+
+}

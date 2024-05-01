@@ -1,0 +1,16 @@
+package banco_digital;
+
+public class ContaPoupanca extends Conta {
+
+	
+	// toda vez que for criada uma conta sera adicionado um numero a mais pela
+	// sequencial
+	private static int SEQUENCIAL = 1;
+
+	public ContaPoupanca() {
+		this.agencia = Conta.AGENCIA_PADRAO;
+		super.numero = SEQUENCIAL++;
+
+	}
+
+}
